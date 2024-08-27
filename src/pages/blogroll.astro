@@ -1,0 +1,53 @@
+---
+import Icon from 'astro-icon';
+import Layout from '../layouts/Base.astro';
+
+/* ícones:
+• podcast -> simple-line-icons:microphone
+• newsletter -> simple-line-icons:envelope-letter
+• blog -> simple-line-icons:speech
+• canal -> simple-line-icons:social-youtube
+
+https://icones.js.org/collection/simple-line-icons
+*/
+const links: Array<{ title: string; desc: string; href: string, icon: string }> = [
+	{
+		title: "olá, gabs",
+		desc: "por Gabs Ferreira, um podcast sobre tecnologia com um olhar humanizado.",
+		href: "https://open.spotify.com/show/094hX276k5lFzM8Ig2xpsl",
+		icon: "simple-line-icons:microphone",
+	},
+	{
+		title: "papo camarada",
+		desc: "podcast de teoria e debates sobre a esquerda revolucionária.",
+		href: "https://open.spotify.com/show/44MId3CxYKEpBg7KqZJU9k?si=29f85943c00c4e79",
+		icon: "simple-line-icons:microphone",
+	},
+];
+
+---
+
+<Layout title="sobre">
+        <h2 class="title">blogroll</h2>
+        <p class="text-sm italic">uma lista de blogs, podcasts, newsletters e outros conteúdos que tenho consumido.</p>
+        <hr class="my-4"/>
+        <ul class="space-y-4 sm:space-y-2">
+            {
+                links.map(({ href, title, desc, icon }) => (
+                    <li>
+						<Icon name={icon} class="size-5 inline-block ps-1	"/>
+
+                        <a
+                            href={href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="cody-link inline-block"
+                        >
+                            {title}
+                        </a>: 
+                        <p class="inline-block sm:mt-2">{desc}</p>
+                    </li>
+                ))
+            }
+        </ul>
+</Layout>

@@ -6,24 +6,24 @@
   :root {
     color-scheme: light;
     /* https://tailwindcss.com/docs/customizing-colors#using-css-variables */
-    --theme-bg: #efefef;
-    --theme-text: #222222;
-    --theme-accent: #dd7878;
-    --theme-accent-2: #bcc0cd;
-    --theme-surface: #e6e6e6;
-    --theme-quote: #dd7878;
-    --theme-highlight: #dd7878;
+    --theme-bg: #faf8f8;
+    --theme-text: #2b2b2b;
+    --theme-accent: deeppink;
+    --theme-accent-2: pink;
+    --theme-surface: #faf8f8;
+    --theme-quote: deeppink;
+    --theme-highlight: pink;
   }
 
   :root.dark {
     color-scheme: dark;
-    --theme-bg: #1d1d1d;
-    --theme-text: #ededed;
-    --theme-accent: #93e1d4;
-    --theme-accent-2: #545454;
-    --theme-surface: #2f2f2f;
-    --theme-quote: #93e1d4;
-    --theme-highlight: #93e1d4;
+    --theme-bg: #161618;
+    --theme-text: #ebebec;
+    --theme-accent: deeppink;
+    --theme-accent-2: pink;
+    --theme-surface: #161618  ;
+    --theme-quote: deeppink;
+    --theme-highlight: pink;
   }
 
   html {
@@ -31,7 +31,7 @@
   }
 
   html body {
-    @apply mx-auto flex min-h-screen max-w-6xl flex-col px-4 pt-4 md:pt-8 font-mono text-sm font-normal antialiased bg-bgColor text-textColor;
+    @apply mx-auto flex min-h-screen max-w-3xl flex-col px-4 pt-4 md:pt-8 font-sans tracking-wide	text-sm font-normal leading-relaxed    antialiased bg-bgColor text-textColor;
   }
 
   /*
@@ -124,12 +124,12 @@
   */
 
   .tag {
-    @apply bg-accent px-1 py-0 text-bgColor font-semibold text-sm;
+    @apply bg-accent px-1 py-0 text-bgColor font-semibold text-xs;
   }
 
   .tag:before {
     content: "#";
-    @apply -mr-2;
+    @apply -mr-1;
   }
 
   .cody-link {
@@ -165,9 +165,28 @@
   }
 
   .title {
-    @apply text-lg font-bold mb-4;
+    @apply font-serif tracking-wider	font-bold mb-4;
   }
 
+  .title-nob4 {
+    @apply font-serif tracking-wider	font-bold mb-4;
+  }
+
+  li {
+    @apply pb-4;
+  }
+  h1 {
+    @apply text-xl;
+  }
+
+  h2 {
+    @apply text-lg;
+  }
+
+  h3 {
+    @apply text-base;
+  }
+  
   hr {
     @apply border-accent border-dashed my-6;
   }

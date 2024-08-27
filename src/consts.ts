@@ -18,12 +18,12 @@ type SocialLink = {
 }
 
 export const siteConfig: Config = {
-  title: "Astro Theme Cody",
-  description: "",
-  lang: "en-GB",
+  title: "☠️ blog.tiffs.dev",
+  description: "blog pessoal",
+  lang: "pt-BR",
   profile: {
-    author: "Amy Dang",
-    description: "your bio description"
+    author: "tiffany rossi",
+    description: "desenvolvedora java"
   }
 }
 
@@ -31,25 +31,26 @@ export const siteConfig: Config = {
   These are you social media links. 
   It uses https://github.com/natemoo-re/astro-icon#readme
   You can find icons @ https://icones.js.org/
+  https://github.com/thesabbir/simple-line-icons
 */
 export const socialLinks: Array<SocialLink> = [
   {
-    icon: "mdi:github",
-    friendlyName: "Github",
-    link: "https://github.com/kirontoo/astro-theme-cody",
+    icon: "simple-line-icons:notebook",
+    friendlyName: "wiki",
+    link: "https://wiki.tiffs.dev",
   },
   {
-    icon: "mdi:linkedin",
-    friendlyName: "LinkedIn",
-    link: "#",
+    icon: "simple-line-icons:social-github",
+    friendlyName: "github",
+    link: "https://github.com/tiffanyrossi",
   },
   {
-    icon: "mdi:email",
+    icon: "simple-line-icons:envelope",
     friendlyName: "email",
-    link: "mailto:ndangamy@gmail.com",
+    link: "mailto:oi@tiffs.dev",
   },
   {
-    icon: "mdi:rss",
+    icon: "simple-line-icons:feed",
     friendlyName: "rss",
     link: "/rss.xml"
   }
@@ -57,23 +58,27 @@ export const socialLinks: Array<SocialLink> = [
 
 export const NAV_LINKS: Array<{ title: string, path: string }> = [
   {
-    title: "Home",
+    title: "home",
     path: "/",
   },
   {
-    title: "About",
-    path: "/about",
+    title: "sobre",
+    path: "/sobre",
   },
   {
-    title: "Blog",
+    title: "blog",
     path: "/blog",
   },
   {
-    title: "Projects",
-    path: '/projects'
+    title: "now",
+    path: '/now'
   },
   {
-    title: "Archive",
-    path: '/archive'
+    title: "blogroll",
+    path: '/blogroll'
+  },
+  {
+    title: "arquivo",
+    path: '/arquivo'
   }
 ];

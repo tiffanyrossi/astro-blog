@@ -12,16 +12,4 @@ const { frontmatter: {title, description}, headings } = Astro.props
 			<slot/>
 		</div>
 	</article>
-	<aside slot="sidebar" class="hidden sm:block">
-		<div class="flex flex-col space-y-2">
-			<h2 class="font-semibold text-lg text-textColor">{siteConfig.profile.author}</h2>
-			{siteConfig.profile.description && (<p>{siteConfig.profile.description}</p>)}
-			<SocialMediaLinks/>
-			<span class="!my-4 text-accent" aria-hidden>---</span>
-			<p>
-				{description}
-			</p>
-		</div>
-		{!!headings.length && <TOC headings={headings} />}
-	</aside>
 </Layout>

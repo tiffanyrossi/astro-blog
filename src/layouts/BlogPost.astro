@@ -44,33 +44,27 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 ---
 
 <Layout title={title} description={description} image={socialImage} articleDate={articleDate}>
-	<article class="cody-bg prose dark:prose-invert prose-cody text-textColor max-w-4xl">
+	<article class="cody-bg prose dark:prose-invert prose-cody text-textColor max-w-6xl">
 		<header class="space-y-2">
-			{
-				heroImage &&
-				<div class="aspect-h-9 aspect-w-16 mb-6 w-full flex justify-center">
-						<img src={heroImage.src} alt={heroImage.alt} class="m-0"/>
-				</div>
-			}
 			{series && (
 				<div class="md:sr-only not-sr-only">
-					<span>Part of series:</span>
+					<span>série:</span>
 						<a class="cody-link" href={`/series/${series}`}>{series}</a>
 				</div>
 			)}
 			<div class="flex gap-2 items-center">
-				<h1 class="text-3xl my-0">{title}</h1>
-				{ draft && (<span class="px-1 py-0 bg-red-200 text-red-600 text-sm font-semibold">draft</span>)}
+				<h1 class="text-2xl my-0 font-serif">{title}</h1>
+				{ draft && (<span class="px-1 py-0 bg-red-200 text-red-600 text-xs font-semibold">rascunho</span>)}
 			</div>
-			<span class="font-semibold text-textColor flex gap-2 items-center">
+			<span class="font-thin text-xs text-textColor flex gap-2 items-center">
 				<FormattedDate date={pubDate} dateTimeOptions={dateTimeOptions}/>
 				<span>
 					/ {minutesRead}
 				</span>
 				{
 					updatedDate && (
-						<div class="italic px-2 bg-accent-2 w-fit text-sm font-normal">
-							Last updated: <FormattedDate date={updatedDate} dateTimeOptions={dateTimeOptions} />
+						<div class="italic px-2 bg-accent-2 w-fit text-xs font-normal">
+							atualizado: <FormattedDate date={updatedDate} dateTimeOptions={dateTimeOptions} />
 						</div>
 					)
 				}
@@ -92,27 +86,6 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 		</main>
 		<BackToTopBtn/>
 	</article>
-	<aside slot="sidebar" class="hidden sm:block">
-		<div class="flex flex-col space-y-2">
-			<h2 class="font-semibold text-lg text-textColor">{siteConfig.profile.author}</h2>
-			{siteConfig.profile.description && (<p>{siteConfig.profile.description}</p>)}
-			<SocialMediaLinks/>
-			<span class="!my-4 text-accent" aria-hidden>---</span>
-			<p>
-				{description}
-			</p>
-			{series && (
-				<div class="pt-2 hidden md:block">
-					<span>Part of series: </span>
-					<br>
-					<ul>
-							<li><a class="cody-link" href={`/series/${series}`}>{series}</a></li>
-					</ul>
-				</div>
-			)}
-		</div>
-		{!!headings.length && <TOC headings={headings} />}
-	</aside>
 </Layout>
 
 <CopyBtn/>

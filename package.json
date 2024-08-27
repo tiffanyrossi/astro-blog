@@ -23,6 +23,8 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@iconify-json/hugeicons": "^1.1.1",
+    "@iconify-json/solar": "^1.1.10",
     "@tailwindcss/typography": "^0.5.10"
   }
 }

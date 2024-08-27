@@ -19,13 +19,13 @@ const { prevUrl, nextUrl } = Astro.props;
 			{prevUrl && (
 				<a class="me-auto sm:hover:text-accent" href={prevUrl.url} data-astro-prefetch>
 					{prevUrl.srLabel && <span class="sr-only">{prevUrl.srLabel}</span>}
-					{prevUrl.text ? prevUrl.text : "Previous"}
+					{prevUrl.text ? prevUrl.text : "anterior"}
 				</a>
 			)}
 			{nextUrl && (
 				<a class="ms-auto sm:hover:text-accent" href={nextUrl.url} data-astro-prefetch>
 					{nextUrl.srLabel && <span class="sr-only">{nextUrl.srLabel}</span>}
-					{nextUrl.text ? nextUrl.text : "Next"}
+					{nextUrl.text ? nextUrl.text : "próximo"}
 				</a>
 			)}
 		</nav>

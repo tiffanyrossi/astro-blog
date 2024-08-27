@@ -14,14 +14,14 @@ const { title = "", description = siteConfig.description, image } = Astro.props;
 
 ---
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="pt-BR" class="dark">
 	<head>
 		<BaseHead title={title} description={description} image={image} />
 	</head>
 	<body>
 		<Header/>
 		<main>
-			<section class="cody-bg">
+			<section>
 				<slot/>
 			</section>
 		</main>

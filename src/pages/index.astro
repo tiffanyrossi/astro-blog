@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/Base.astro';
 import PostPreview from "@/components/blog/PostPreviewB";
-import SocialMediaLinks from "@/components/SocialMediaLinks";
 import { getAllPosts, sortMDByDate, sortMDByPinned } from "@/utils";
 
 const MAX_POSTS = 10;
@@ -9,73 +8,47 @@ const allPosts = await getAllPosts();
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 const allPostsByPinned = sortMDByPinned(allPostsByDate);
 
-const tech: Array<{ title: string; desc: string; href: string }> = [
+const links: Array<{ title: string; desc: string; href: string }> = [
 	{
-		title: "Astro",
-		desc: "Build fast websites, faster.",
-		href: "https://astro.build",
+		title: "sobre",
+		desc: "quem sou eu, o que faço, por que faço, como faço.",
+		href: "/sobre",
 	},
 	{
-		title: "Astro Assets",
-		desc: "Built-in optimized asset support.",
-		href: "https://docs.astro.build/en/guides/assets/",
+		title: "blog",
+		desc: "as coisas que escrevo.",
+		href: "/blog",
 	},
 	{
-		title: "Tailwind CSS",
-		desc: "Rapidly build modern websites without ever leaving your HTML.",
-		href: "https://tailwindcss.com",
+		title: "now",
+		desc: "no que estou metida no momento - leituras, projetos, músicas, hobbies...",
+		href: "/now",
 	},
 	{
-		title: "Markdown",
-		desc: "Simple and easy-to-use markup language.",
-		href: "https://www.markdownguide.org/",
+		title: "blogroll",
+		desc: "indicações de páginas que acompanho e gosto.",
+		href: "/blogroll"
 	},
 	{
-		title: "MDX",
-		desc: "Markdown for the component era.",
-		href: "https://mdxjs.com/",
-	},
-	{
-		title: "Astro Icon",
-		desc: "An easy to use Icon component for Astro.",
-		href: "https://github.com/natemoo-re/astro-icon#readme",
+		title: "arquivo",
+		desc: "uma lista de tudo que já escrevi por aqui.",
+		href: "/arquivo",
 	},
 ];
-
 ---
 
-<BaseLayout title="Home">
+<BaseLayout title="home">
 	<section>
-		<h1 class="title">Hello World</h1>
+		<h1 class="title">hello, world</h1>
 		<p class="mb-4 sm:mb-8">
-			Hey guys! This a theme for Astro. You can use this to as personal blog
-			or portfolio. If you want to know more about how you can customise and make it your
-			own, click on the github icon link below, and it will take you to the repo.
-		</p>
-		<div>
-			<span>You can find me on: </span>
-			<SocialMediaLinks/>
-		</div>
-	</section>
-
-	<section class="mt-8 sm:mt-16">
-		<h2 class="title">Posts</h2>
-		<ul class="space-y-4 sm:space-y-2">
-			{allPostsByPinned.map(p => <PostPreview post={p}/>)}
-		</ul>
-	</section>
-
-	<section class="mt-16">
-			<h2 class="title">Technologies</h2>
-			<ul class="space-y-4 sm:space-y-2">
+			oi! eu sou a <a href="/sobre" class="cody-link">Tiffany</a> e este é meu blog, meu espaço online onde escrevo sobre o que dá na telha. se quiser conhecer minhas notas de estudos, siga para a minha <a href="https://wiki.tiffs.dev" target="_blank " class="cody-link">wiki pessoal</a>. para se encontrar por aqui, siga esse guia:
+			<ul>
 				{
-					tech.map(({ href, title, desc }) => (
+					links.map(({ href, title, desc }) => (
 						<li>
 							<a
 								href={href}
-								target="_blank"
-								rel="noopener noreferrer"
-								class="cody-link inline-block"
+								class="cody-link inline-block before:content-['/']"
 							>
 								{title}
 							</a>: 
@@ -84,5 +57,15 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 					))
 				}
 			</ul>
-		</section>
+		</p>
+
+	</section>
+
+	<section class="mt-8 sm:mt-16">
+		<h2 class="title">posts recentes</h2>
+		<ul class="space-y-4 sm:space-y-2">
+			{allPostsByPinned.map(p => <PostPreview post={p}/>)}
+		</ul>
+	</section>
+
 </BaseLayout>

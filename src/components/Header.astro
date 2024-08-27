@@ -36,14 +36,14 @@ const url = new URL(Astro.request.url);
 				title="tags"
 				aria-current={url.pathname === "tags" ? "page" : false}
 				data-astro-prefetch
-			>Tags</HeaderLink>
-			<HeaderLink 
+			>tags</HeaderLink>
+			<!-- <HeaderLink 
 				class="sm:hidden block py-2 sm:py-0" 
 				href="/series"
 				title="series"
 				aria-current={url.pathname === "series" ? "page" : false}
 				data-astro-prefetch
-			>Series</HeaderLink>
+			>séries</HeaderLink> -->
 		</div>
 	</nav>
 
@@ -57,7 +57,7 @@ const url = new URL(Astro.request.url);
 					class="group flex items-center justify-center" 
 					type="button" 
 					id="navigation-menu-btn"
-					aria-label="Open main menu"
+					aria-label="abrir menu principal"
 					aria-expanded="false"
 					aria-haspopup="menu"
 				>
@@ -80,17 +80,12 @@ const url = new URL(Astro.request.url);
 
 <style>
 	.title {
-		@apply bg-accent p-1 text-bgColor text-sm;
+		@apply bg-accent p-1 text-bgColor text-lg;
 	}
 
 	.title:before{
-		content:"[";
+		content:"";
 		margin-right: 0;
-		@apply text-bgColor;
-	}
-
-	.title:after {
-		content:"]";
 		@apply text-bgColor;
 	}
 </style>

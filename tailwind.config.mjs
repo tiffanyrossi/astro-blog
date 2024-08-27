@@ -4,6 +4,8 @@ export default {
 	darkMode: "class",
 	theme: {
 		fontFamily: {
+			'sans': ['Tahoma'],
+			'serif': ['Georgia'],
 			'mono': ['Space Mono', 'monospace']
 		},
 		extend: {

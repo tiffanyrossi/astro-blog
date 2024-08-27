@@ -1,8 +1,8 @@
 const dateOptions = {
-  locale: "en-GB",
+  locale: "pt-BR",
   options: {
     day: "numeric",
-    month: "short",
+    month: "numeric",
     year: "numeric",
   }
 };

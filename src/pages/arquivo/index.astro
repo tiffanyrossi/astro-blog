@@ -1,11 +1,10 @@
 ---
-
 import { 
 	getAllPosts,
 	sortMDByDate,
-} from "@/utils";
-import BaseLayout from "@/layouts/Base";
-import FormattedDate from "@/components/FormattedDate";
+} from "../../utils";
+import BaseLayout from "../../layouts/Base.astro";
+import FormattedDate from "../../components/FormattedDate.astro";
 import { siteConfig } from '../../consts';
 import type { CollectionEntry } from "astro:content";
 
@@ -41,7 +40,7 @@ const groupArray = (posts: Array<CollectionEntry<"blog">>) => {
 
 const archivedPosts = groupArray(allPostsByDate).reverse();
 const dateFormat = {
-	locale: "en-US",
+	locale: "pt-BR",
 	options: {
 		month: "short",
 		day: "2-digit",

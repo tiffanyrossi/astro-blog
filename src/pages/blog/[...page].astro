@@ -23,42 +23,30 @@ interface Props {
 const { page, tags } = Astro.props;
 
 const meta = {
-	title: "Posts",
-	description: "Read my collection of posts and the things that interest me",
+	title: "posts",
 };
 
 const paginationProps = {
 	...(page.url.prev && {
 		prevUrl: {
 			url: page.url.prev,
-			text: `← Previous Posts`,
+			text: `← voltar`,
 		},
 	}),
 	...(page.url.next && {
 		nextUrl: {
 			url: page.url.next,
-			text: `Next Posts →`,
+			text: `avançar →`,
 		},
 	}),
 };
 ---
 
 <BaseLayout {...meta}>
-	<section class="cody-bg">
-		<h1 class="title">Posts</h1>
-		<ul class="flex flex-col gap-4">
-			{
-			page.data.map(post => (
-				<PostPreview post={post} withDesc/>
-			))
-			}
-		</ul>
-		<Pagination {...paginationProps} />
-	</section>
+
 	{
-		!!tags.length && (
-			<aside slot="sidebar">
-				<h2 class="flex font-semibold text-lg items-center mb-4">
+		!!tags.length && (	
+				<h3 class="flex font-semibold text-md items-center mb-4">
 					<svg
 						aria-hidden="true"
 						xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +63,7 @@ const paginationProps = {
 						<path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116" />
 						<path d="M6 9h-.01" />
 					</svg>
-					Tags
+					tags
 				</h2>
 				<ul class="flex gap-2 flex-wrap mb-4">
 					{tags.map(tag => (
@@ -89,8 +77,19 @@ const paginationProps = {
 						</li>
 					))}
 				</ul>
-				<a href="/tags" class="cody-link" aria-label="View all blog tags">See more -></a>
-			</aside>
+				<a href="/tags" class="cody-link" aria-label="View all blog tags">ver mais -></a>
 		)
 	}
+		<hr/>
+
+		<ul class="flex flex-col gap-4">
+			{
+			page.data.map(post => (
+				<PostPreview post={post} withDesc/>
+			))
+			}
+		</ul>
+		<Pagination {...paginationProps} />
+
+
 </BaseLayout>

@@ -18,7 +18,7 @@ const urlBasePath = post.collection === "project" ? "projects" : post.collection
 <li>
 	<span>
 		<a href={`/${urlBasePath}/${post.slug}/`} class="post-item">
-			<h4 class="cody-link inline font-bold" >{post.data.title}</h4>
+			<h4 class="cody-link inline font-bold font-serif" >{post.data.title}</h4>
 		</a>
 		{ pinned &&
 			<Icon 
@@ -27,12 +27,17 @@ const urlBasePath = post.collection === "project" ? "projects" : post.collection
 				aria-hidden="true" 
 				focusable="false"
 			/>
-		}
+		}		
 	</span>
-	<p class="date pr-2 mt-1">
-		<FormattedDate date={postDate}/>
-	</p>
+	<div>
+		<p class="date flex gap-2 flex-wrap inline-block mb-4">
+			<FormattedDate date={postDate}/> 
+		</p>
+
+	</div>
+
 	{withDesc && ( <p class="italic">{post.data.description}</p> )}
+	<hr/>	
 </li>
 <style>
 	.post-item:before {
