@@ -34,6 +34,10 @@
     @apply mx-auto flex min-h-screen max-w-3xl flex-col px-4 pt-4 md:pt-8 font-sans tracking-wide	text-sm font-normal leading-relaxed    antialiased bg-bgColor text-textColor;
   }
 
+  main {
+    @apply break-words text-justify;
+  }
+
   /*
   * CSS for markdown and MDX blog posts
   */
