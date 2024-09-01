@@ -2,13 +2,14 @@ import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { remarkReadingTime } from './src/utils/remark-reading-time.mjs';
-
 import tailwind from "@astrojs/tailwind";
+
+import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://tiffs.dev',
-  integrations: [mdx(), sitemap(), tailwind()],
+  integrations: [mdx(), sitemap(), tailwind(), icon()],
   markdown: {
     remarkPlugins: [remarkReadingTime],
     syntaxHighlight: 'shiki',
@@ -16,10 +17,8 @@ export default defineConfig({
       // https://docs.astro.build/en/guides/markdown-content/#syntax-highlighting
       themes: {
         light: 'catppuccin-mocha',
-        dark: 'catppuccin-latte',
-      },
+        dark: 'catppuccin-latte'
+      }
     }
-  },
+  }
 });
-
-

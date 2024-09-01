@@ -35,22 +35,27 @@ export const siteConfig: Config = {
 */
 export const socialLinks: Array<SocialLink> = [
   {
-    icon: "simple-line-icons:notebook",
+    icon: "ph:books",
     friendlyName: "wiki",
     link: "https://wiki.tiffs.dev",
   },
   {
-    icon: "simple-line-icons:social-github",
+    icon: "ph:github-logo",
     friendlyName: "github",
     link: "https://github.com/tiffanyrossi",
   },
   {
-    icon: "simple-line-icons:envelope",
+    icon: "ph:mastodon-logo",
+    friendlyName: "mastodon",
+    link: "https://todon.eu/@tiffs",
+  },
+  {
+    icon: "ph:envelope-simple",
     friendlyName: "email",
     link: "mailto:oi@tiffs.dev",
   },
   {
-    icon: "simple-line-icons:feed",
+    icon: "ph:rss-simple",
     friendlyName: "rss",
     link: "/rss.xml"
   }
