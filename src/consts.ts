@@ -47,7 +47,7 @@ export const socialLinks: Array<SocialLink> = [
   {
     icon: "ph:mastodon-logo",
     friendlyName: "mastodon",
-    link: "https://todon.eu/@tiffs",
+    link: "https://ursal.zone/@tiffs",
   },
   {
     icon: "ph:envelope-simple",
