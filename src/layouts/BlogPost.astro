@@ -82,13 +82,14 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 			)}
 		</header>
 		<hr class="my-4"/>
-		<main class="prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent">
-			<slot class="e-content" />
+		<main class="e-content prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent">
+			<slot />
 
 			<a class="u-bridgy-fed" href="https://fed.brid.gy/" hidden="from-humans"></a>
-			<HCard title={title} />
-
 		</main>
+
+		<HCard title={title} />
+
 		<BackToTopBtn/>
 	</article>
 </Layout>
