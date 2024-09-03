@@ -54,7 +54,7 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 				</div>
 			)}
 			<div class="flex gap-2 items-center">
-				<h1 class="text-2xl my-0 font-serif">{title}</h1>
+				<h1 class="text-2xl my-0 font-serif"><a class="u-url" href="">{title}</a></h1>
 				{ draft && (<span class="px-1 py-0 bg-red-200 text-red-600 text-xs font-semibold">rascunho</span>)}
 			</div>
 			<span class="font-thin text-xs text-textColor flex gap-2 items-center">
@@ -75,15 +75,15 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 					<Icon class="w-5 h-5" name="ph:tag" aria-hidden="true" focusable="false"/>
 					{tags.map((tag: string) => (
 						<li class="tag">
-							<a href={`/tags/${tag}`}>{tag}</a>
+							<a class="p-category" href={`/tags/${tag}`}>{tag}</a>
 						</li>
 					))}
 				</ul>
 			)}
 		</header>
 		<hr class="my-4"/>
-		<main class="e-content prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent">
-			<slot />
+		<main class="prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent">
+			<slot class="e-content" />
 
 			<a class="u-bridgy-fed" href="https://fed.brid.gy/" hidden="from-humans"></a>
 			<HCard title={title} />
