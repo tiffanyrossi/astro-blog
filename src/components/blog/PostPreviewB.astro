@@ -16,7 +16,7 @@ const pinned: boolean = !!post.data.order;
 
 <li>
 	<div class="flex flex-col gap-x-0 sm:flex-row sm:divide-x sm:divide-accent">
-		<FormattedDate date={postDate} class="min-w-[100px] text-gray-600 dark:text-gray-400"/>
+		<FormattedDate date={postDate} class="min-w-[180px] text-gray-600 dark:text-gray-400"/>
 		<span class="sm:before:ml-4">
 			<a href={`/blog/${post.slug}/`} class="cody-link" data-astro-prefetch rel="author">
 				{post.data.title}
