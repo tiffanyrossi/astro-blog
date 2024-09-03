@@ -40,7 +40,19 @@
 
   /*
   * CSS for markdown and MDX blog posts
-  */
+  */ 
+
+  .hcard {
+    @apply text-white flex flex-row place-content-center place-items-center gap-2;
+  }
+
+  .hcard a {
+    @apply text-white;
+  }
+
+  .signature {
+    @apply font-hand text-2xl antialiased font-semibold;
+  }
 
   .prose-cody blockquote {
     @apply text-quote border-l-0;

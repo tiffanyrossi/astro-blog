@@ -1,0 +1,22 @@
+---
+import { Icon } from "astro-icon/components";
+
+const info = Astro.props;
+const title = info.title;
+---
+<Icon name="ph:envelope-simple" class="h-5 w-5 size-5 inline-block ps-1	"/> <a href=`mailto:oi@tiffs.dev?subject=Resposta: ${title}` class="cody-link">responda por e-mail</a>
+
+<div class="flex flex-col place-items-center mt-5">
+    <Icon class="h-5 w-5" name="mdi:gesture" />
+</div>
+
+<div class="h-card hcard">
+    <div class="mb-2 ml-2 order-first">
+        <img src="/img/tiff.jpg" width="70px" class="u-photo rounded-full">
+    </div>
+    <div class="mb-2 ml-2">
+        <span class="signature">tiffany</span>
+        <a class="u-url" href="acct:blog@tiffs.dev"></a>
+    </div>
+</div>
+

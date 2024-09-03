@@ -6,7 +6,8 @@ export default {
 		fontFamily: {
 			'sans': ['Tahoma'],
 			'serif': ['Georgia'],
-			'mono': ['Space Mono', 'monospace']
+			'mono': ['Space Mono', 'monospace'],
+			'hand': ['Playwrite AU TAS']
 		},
 		extend: {
 			colors: {

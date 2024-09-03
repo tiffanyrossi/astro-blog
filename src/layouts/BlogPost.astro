@@ -8,6 +8,7 @@ import BackToTopBtn from '@/components/BackToTopBtn';
 import CopyBtn from '@/components/CopyBtn';
 import { Icon } from 'astro-icon/components';
 import { siteConfig } from '../consts';
+import HCard from '@/components/HCard';
 
 interface Props {
 	post: CollectionEntry<"blog">;
@@ -44,7 +45,7 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 ---
 
 <Layout title={title} description={description} image={socialImage} articleDate={articleDate}>
-	<article class="cody-bg prose dark:prose-invert prose-cody text-textColor max-w-6xl">
+	<article class="cody-bg prose dark:prose-invert prose-cody text-textColor max-w-6xl h-entry">
 		<header class="space-y-2">
 			{series && (
 				<div class="md:sr-only not-sr-only">
@@ -81,8 +82,12 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 			)}
 		</header>
 		<hr class="my-4"/>
-		<main class="prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent">
+		<main class="e-content prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent">
 			<slot />
+
+			<a class="u-bridgy-fed" href="https://fed.brid.gy/" hidden="from-humans"></a>
+			<HCard title={title} />
+
 		</main>
 		<BackToTopBtn/>
 	</article>
