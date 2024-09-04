@@ -47,7 +47,7 @@
   }
 
   .hcard a {
-    @apply text-white;
+    @layer theme-text;
   }
 
   .signature {
