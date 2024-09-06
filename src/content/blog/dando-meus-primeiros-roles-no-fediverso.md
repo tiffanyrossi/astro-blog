@@ -25,6 +25,7 @@ não vou explicar muito sobre o fediverso, até porque ainda estou aprendendo. m
 - [kit de boas-vindas ao mastodon](https://social.br-linux.org/@augustocc/110152361513063938) - por `@augustocc@social.br-linux.org`
 - [dicas de mastodon para quem veio do twitter](hhttps://social.br-linux.org/@augustocc/110238313464659826) - por `@augustocc@social.br-linux.org`
 - [recomendações para quem está chegando ao mastodon](https://bolha.us/@diegopds/113058227322541448) - por `@diegopds@bolha.us`
+- [dicas para a galera nova do mastodon](https://ursal.zone/@pbaesse/112282366828058260) - por `@pbaesse@ursal.zone`
 - [bridgy fed - fazendo a ponte entre o fediverso, o bluesky e a web](https://fed.brid.gy/docs) 
 - [the mastodon's guide to the fediverse](https://controlaltdelete.technology/articles/the-mastodons-guide-to-the-fediverse.html)
 
