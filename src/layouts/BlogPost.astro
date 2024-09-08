@@ -9,6 +9,7 @@ import CopyBtn from '@/components/CopyBtn';
 import { Icon } from 'astro-icon/components';
 import { siteConfig } from '../consts';
 import HCard from '@/components/HCard';
+import Comments from '@/components/Comments';
 
 interface Props {
 	post: CollectionEntry<"blog">;
@@ -45,55 +46,55 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 ---
 
 <Layout title={title} description={description} image={socialImage} articleDate={articleDate}>
-	<article class="cody-bg prose dark:prose-invert prose-cody text-textColor max-w-6xl h-entry">
-		<header class="space-y-2">
-			{series && (
-				<div class="md:sr-only not-sr-only">
-					<span>série:</span>
-						<a class="cody-link" href={`/series/${series}`}>{series}</a>
+	<div class="h-entry">
+		<article class="cody-bg prose dark:prose-invert prose-cody text-textColor max-w-6xl">
+			<header class="space-y-2">
+				{series && (
+					<div class="md:sr-only not-sr-only">
+						<span>série:</span>
+							<a class="cody-link" href={`/series/${series}`}>{series}</a>
+					</div>
+				)}
+				<div class="flex gap-2 items-center">
+					<h1 class="text-2xl my-0 font-serif p-name"><a class="u-url" href="">{title}</a></h1>
+					{ draft && (<span class="px-1 py-0 bg-red-200 text-red-600 text-xs font-semibold">rascunho</span>)}
 				</div>
-			)}
-			<div class="flex gap-2 items-center">
-				<h1 class="text-2xl my-0 font-serif p-name"><a class="u-url" href="">{title}</a></h1>
-				{ draft && (<span class="px-1 py-0 bg-red-200 text-red-600 text-xs font-semibold">rascunho</span>)}
-			</div>
-			<span class="font-thin text-xs text-textColor flex gap-2 items-center">
-				<FormattedDate date={pubDate} dateTimeOptions={dateTimeOptions}/>
-				<span>
-					/ {minutesRead}
+				<span class="font-thin text-xs text-textColor flex gap-2 items-center">
+					<FormattedDate date={pubDate} dateTimeOptions={dateTimeOptions}/>
+					<span>
+						/ {minutesRead}
+					</span>
+					{
+						updatedDate && (
+							<div class="italic px-2 bg-accent-2 w-fit text-xs font-normal">
+								atualizado: <FormattedDate date={updatedDate} dateTimeOptions={dateTimeOptions} />
+							</div>
+						)
+					}
 				</span>
-				{
-					updatedDate && (
-						<div class="italic px-2 bg-accent-2 w-fit text-xs font-normal">
-							atualizado: <FormattedDate date={updatedDate} dateTimeOptions={dateTimeOptions} />
-						</div>
-					)
-				}
-			</span>
-			{tags && (
-				<ul class="not-prose flex gap-2 flex-wrap">
-					<Icon class="w-5 h-5" name="ph:tag" aria-hidden="true" focusable="false"/>
-					{tags.map((tag: string) => (
-						<li class="tag">
-							<a class="p-category" href={`/tags/${tag}`}>{tag}</a>
-						</li>
-					))}
-				</ul>
-			)}
-		</header>
-		<hr class="my-4"/>
-		<main class="e-content prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent">
-			<slot />
+				{tags && (
+					<ul class="not-prose flex gap-2 flex-wrap">
+						<Icon class="w-5 h-5" name="ph:tag" aria-hidden="true" focusable="false"/>
+						{tags.map((tag: string) => (
+							<li class="tag">
+								<a class="p-category" href={`/tags/${tag}`}>{tag}</a>
+							</li>
+						))}
+					</ul>
+				)}
+			</header>
+			<hr class="my-4"/>
+			<main class="e-content prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent">
+				<slot />	
+			</main>
+			<HCard title={title} />
+			<BackToTopBtn/>
+		</article>
 
-			<a class="u-bridgy-fed" href="https://fed.brid.gy/" hidden="from-humans"></a>
-			<a rel="author" class="p-author h-card" href="https://blog.tiffs.dev" hidden="from-humans">Tiffany Rossi</a>
+		<a class="u-bridgy-fed" href="https://fed.brid.gy/" hidden="from-humans"></a>
+		<a rel="author" class="p-author h-card" href="https://blog.tiffs.dev" hidden="from-humans">Tiffany Rossi</a>
 
-		</main>
-
-		<HCard title={title} />
-
-		<BackToTopBtn/>
-	</article>
+	</div>
 </Layout>
 
 <CopyBtn/>

@@ -3,6 +3,7 @@
 import type { InferGetStaticPropsType, GetStaticPaths } from 'astro';
 import BlogPost from '../../layouts/BlogPost.astro';
 import { getAllPosts } from '@/utils';
+import "astro-mastodon/dist/output.css";
 
 export const getStaticPaths = (async () => {
 	const blogEntries = await getAllPosts();
