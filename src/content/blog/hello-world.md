@@ -13,5 +13,3 @@ eu não sou um produto. minhas opiniões, vontades, gostos, medos, aquilo que am
 mas eu gosto muito de ter um espaço meu para escrever uma coisinha ou outra, registrar minha vida e preencher com coisas que me inspiram. sou uma grande entusiasta da indie web, do retorno dos blogs, do conteúdo escrito e da ideia de ser dono daquilo que se produz.
 
 esse blog nasce desses sentimentos, e não tem muito direcionamento - a ideia é publicar o que der na telha, sem muito filtro, sem muita frescura, do jeito que fazíamos antigamente.
-
-`@rosnovsky@lounge.town:109860863149734322`
