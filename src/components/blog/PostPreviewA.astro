@@ -36,7 +36,10 @@ const urlBasePath = post.collection === "project" ? "projects" : post.collection
 
 	</div>
 
-	{withDesc && ( <p class="italic">{post.data.description}</p> )}
+	{withDesc && ( <p>{post.data.description}<a href={`/${urlBasePath}/${post.slug}/`} class="cody-link" rel="author">
+	(...) continuar lendo
+	</a>
+</p> )}
 	<hr/>	
 </li>
 <style>

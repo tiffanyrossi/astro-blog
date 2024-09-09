@@ -3,9 +3,9 @@ import { Icon } from 'astro-icon/components';
 import Layout from '../layouts/Base.astro';
 
 /* ícones:
-• podcast -> simple-line-icons:microphone
+• podcast -> ph:microphone-bold
 • newsletter -> simple-line-icons:envelope-letter
-• blog -> simple-line-icons:speech
+• blog -> ph:chat-text-bold
 • canal -> simple-line-icons:social-youtube
 
 https://icones.js.org/collection/simple-line-icons
@@ -13,16 +13,34 @@ https://icones.js.org/collection/simple-line-icons
 const links: Array<{ title: string; desc: string; href: string, icon: string }> = [
 	{
 		title: "olá, gabs",
-		desc: "por Gabs Ferreira, um podcast sobre tecnologia com um olhar humanizado.",
+		desc: "tecnologia sob a perspectiva humana.",
 		href: "https://open.spotify.com/show/094hX276k5lFzM8Ig2xpsl",
-		icon: "ph:microphone",
+		icon: "ph:microphone-bold",
 	},
 	{
 		title: "papo camarada",
-		desc: "podcast de teoria e debates sobre a esquerda revolucionária.",
+		desc: "podcast da esquerda revolucionária.",
 		href: "https://open.spotify.com/show/44MId3CxYKEpBg7KqZJU9k?si=29f85943c00c4e79",
-		icon: "ph:microphone",
+		icon: "ph:microphone-bold",
 	},
+    {
+		title: "trilux",
+		desc: "um blog pessoal, a esta altura do campeonato!",
+		href: "ph:microphone-bold",
+		icon: "ph:chat-text-bold",
+	},
+    {
+        title: "gmgall",
+        desc: "é de compreender que sobretudo nos cansamos. viver é não pensar.",
+        href: "https://www.gmgall.net/",
+        icon: "ph:chat-text-bold"
+    },
+    {
+        title: "jhonny decimal",
+        desc: "um sistema para organizar sua vida.",
+        href: "https://johnnydecimal.com/",
+        icon: "ph:globe-bold"
+    }
 ];
 
 ---
@@ -31,7 +49,7 @@ const links: Array<{ title: string; desc: string; href: string, icon: string }> 
         <h2 class="title">blogroll</h2>
         <p class="text-sm italic">uma lista de blogs, podcasts, newsletters e outros conteúdos que tenho consumido.</p>
         <hr class="my-4"/>
-        <ul class="space-y-4 sm:space-y-2">
+        <ul class="space-y-2 sm:space-y-2">
             {
                 links.map(({ href, title, desc, icon }) => (
                     <li>
@@ -45,7 +63,7 @@ const links: Array<{ title: string; desc: string; href: string, icon: string }> 
                         >
                             {title}
                         </a>: 
-                        <p class="inline-block sm:mt-2">{desc}</p>
+                        <p class="inline-block">{desc}</p>
                     </li>
                 ))
             }

@@ -1,8 +1,12 @@
 ---
 title: 'dando meus primeiros rolês no fediverso'
-description: ''
+description: 'eu sou uma grande *apaixonada pela internet*. tenho o mesmo gmail há duas décadas, quando ainda era necessário um convite para criar uma conta, e por lá já recebi newsletters, pdfs de livros, participava de listas de discussão e trocava ideias sobre '
 pubDate: 'Sep 03 2024'
 tags: ["redes sociais", "internet", "fediverso", "100daystooffload"]
+comments:
+  host: 'ursal.zone'
+  username: 'tiffs'
+  id: '113077109937508973'
 ---
 eu sou uma grande *apaixonada pela internet*. tenho o mesmo gmail há duas décadas, quando ainda era necessário um convite para criar uma conta, e por lá já recebi newsletters, pdfs de livros, participava de listas de discussão e trocava ideias sobre os mil projetos que inventava na adolescência. quando conheci minha esposa, ela me mandava todo dia uma coluna da eliane brum por e-mail, além de livros e links interessantes.
 

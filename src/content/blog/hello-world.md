@@ -1,6 +1,6 @@
 ---
 title: 'hello, world'
-description: 'cansei de redes sociais, mas queria um espaço para falar o que penso.'
+description: 'já faz um tempo que enchi o saco de redes sociais. comecei percebendo o quando o twitter me fazia mal - era eu ver qualquer opinião estúpida que eu passava o resto do dia remoendo aquilo. além das polêmicas vazias, escritas naquela fórmula padrão e r'
 pubDate: 'Aug 25 2024'
 tags: ["redes sociais"]
 ---

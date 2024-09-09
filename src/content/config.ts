@@ -14,6 +14,11 @@ const blog = defineCollection({
 	schema: () => z.object({
 		title: z.string().max(150),
 		description: z.string().max(250),
+		comments: z.object({
+			host: z.string().optional().default('ursal.zone'),
+			username: z.string().optional().default('tiffs'),
+			id: z.string().optional()
+		}).optional().default({}),
 		// Transform string to Date object
 		pubDate: z
 			.string()
@@ -39,7 +44,7 @@ const blog = defineCollection({
 		// for pinning posts
 		order: z.number().min(1).max(5).optional(),
 		// hide a post from pagination
-		hide: z.boolean().optional().default(false)
+		hide: z.boolean().optional().default(false),
 	}),
 });
 
@@ -63,7 +68,7 @@ const project = defineCollection({
 		github: z.string().optional(),
 		draft: z.boolean().optional().default(false),
 		// for pinning projects
-		order: z.number().min(1).max(5).optional()
+		order: z.number().min(1).max(5).optional(),
 	})
 });
 

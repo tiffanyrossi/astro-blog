@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   :root {
     color-scheme: light;
@@ -81,7 +82,7 @@
   .prose-cody hr {
     border-top-style: dashed;
     border-top-width: 0.5px;
-    @apply border-accent my-4;
+    @apply border-accent my-2;
   }
   .prose-cody thead {
     @apply border-b-0;
@@ -222,4 +223,5 @@
   .fade-out {
     @apply transition-opacity duration-700 ease-in opacity-0 duration-700;
   }
+
 }
