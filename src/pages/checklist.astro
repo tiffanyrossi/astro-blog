@@ -1,0 +1,58 @@
+---
+import { Icon } from 'astro-icon/components';
+import Layout from '../layouts/Base.astro';
+
+const checklist: Array<{ item: string; done: boolean; }> = [
+	{
+		item: "criar uma checklist de ideias para implementar no blog",
+		done: true
+    },
+    {
+        item: "comentários do mastodon/activity pub",
+        done: true
+    },
+    {
+        item: "adicionar links à página /checklist",
+        done: false
+    },
+    {
+        item: "criar página de /uses",
+        done: false
+    },
+    {
+        item: "desenvolver um esquema mais bonito e organizado para publicar fotos no blog",
+        done: false
+    },
+    {
+        item: "melhorar o tamanho das fontes na versão mobile",
+        done: false
+    }
+]
+
+const doneItem = {icon: "ph:check-circle-bold", style: "text-decoration: line-through;"};
+const todoItem= {icon: "ph:circle-bold", style: ""};
+
+---
+
+<Layout title="checklist">
+    <h2 class="title">checklist</h2>
+    <p class="text-sm">uma lista de ideias para incluir neste blog — essa lista é uma combinação de inspirações, coisas que vi por aí e coisas que saem da minha cabeça. fique à vontade para usar qualquer uma dessas ideias.</p>
+    <hr class="my-4"/>
+
+    <div class="mb-4">
+            {
+                checklist.map(({ item, done }) => (
+                    <div class="flex flex-row mb-2">
+                        <div class="flex mr-2">
+                            <Icon name={done === true ? doneItem.icon : todoItem.icon} class="h-5 w-5 size-5 inline-block" />
+                        </div>
+                        <div class="flex">
+                            <p class="inline-block" style={done === true ? doneItem.style : todoItem.style}>{item}</p>
+                        </div>  
+                    </div>
+                    )   
+                )
+            }
+    </div>
+                        
+</Layout>

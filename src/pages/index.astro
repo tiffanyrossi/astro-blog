@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/Base.astro';
 import PostPreview from "@/components/blog/PostPreviewB";
-import HCard from '@/components/HCard';
 import { getAllPosts, sortMDByDate, sortMDByPinned } from "@/utils";
 
 const MAX_POSTS = 10;
@@ -29,6 +28,11 @@ const links: Array<{ title: string; desc: string; href: string }> = [
 		title: "blogroll",
 		desc: "indicações de páginas que acompanho e gosto.",
 		href: "/blogroll"
+	},
+	{
+		title: "checklist",
+		desc: "ideias para implementar ao blog um dia.",
+		href: "/checklist"
 	},
 	{
 		title: "arquivo",
