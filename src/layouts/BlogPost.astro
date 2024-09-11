@@ -3,13 +3,10 @@ import type { CollectionEntry } from 'astro:content';
 import Layout from '../layouts/Sidebar.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import SocialMediaLinks from '@/components/SocialMediaLinks';
-import TOC from '@/components/TableOfContents';
 import BackToTopBtn from '@/components/BackToTopBtn';
 import CopyBtn from '@/components/CopyBtn';
 import { Icon } from 'astro-icon/components';
 import { siteConfig } from '../consts';
-import HCard from '@/components/HCard';
-import DOMPurify from 'dompurify';
 
 interface Props {
 	post: CollectionEntry<"blog">;
@@ -48,6 +45,21 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 ---
 
 <Layout title={title} description={description} image={socialImage} articleDate={articleDate}>
+  <aside slot="sidebar">
+		<div class="flex flex-col space-y-2 mt-16 sm:mt-2  sticky top-0 pt-8 items-center justify-center">
+      <span class="h-card hcard">
+        <div class="mb-2 ml-2 order-first">
+            <img src="/img/tiff.jpg" width="70px" class="u-photo rounded-full">
+        </div>
+        <div class="mb-2 ml-2">
+            <span class="signature"><a rel="author"class="u-url u-uid" href="https://blog.tiffs.dev">{siteConfig.profile.author}</a></span>
+        </div>
+      </span>
+      <SocialMediaLinks/>
+
+    </div>
+	</aside>	
+
 	<div class="h-entry">
 		<article class="cody-bg prose dark:prose-invert prose-cody text-textColor max-w-6xl">
 			<header class="space-y-2">
@@ -89,8 +101,10 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 			<main class="e-content prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent">
 				<slot />	
 			</main>
-			<HCard title={title} />
-			<BackToTopBtn/>
+      <div class="flex flex-col place-items-center mt-5">
+        <Icon class="h-5 w-5" name="mdi:gesture" />
+    </div>
+      <BackToTopBtn/>
 		</article>
 		<a rel="author" class="p-author h-card" href="https://blog.tiffs.dev" hidden="from-humans">Tiffany Rossi</a>
 

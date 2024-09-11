@@ -22,8 +22,8 @@ export const siteConfig: Config = {
   description: "meu cantinho pessoal na indieweb",
   lang: "pt-BR",
   profile: {
-    author: "tiffany rossi",
-    description: "desenvolvedora, vegana, cozinheira, fã de café"
+    author: "tiffany",
+    description: "dev java • vegana • jardineira digital"
   }
 }
 

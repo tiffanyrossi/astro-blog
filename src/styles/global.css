@@ -32,19 +32,16 @@
   }
 
   html body {
-    @apply mx-auto flex min-h-screen max-w-3xl flex-col px-4 pt-4 md:pt-8 font-sans tracking-wide	text-sm font-normal leading-relaxed    antialiased bg-bgColor text-textColor;
+    @apply mx-auto flex min-h-screen max-w-4xl flex-col px-4 pt-4 md:pt-8 font-sans tracking-wide	text-sm font-normal leading-relaxed    antialiased bg-bgColor text-textColor;
   }
 
-  main {
-    @apply break-words text-justify;
-  }
 
   /*
   * CSS for markdown and MDX blog posts
   */ 
 
   .hcard {
-    @apply text-white flex flex-row place-content-center place-items-center gap-2;
+    @apply flex flex-row place-content-center place-items-center gap-2;
   }
 
   .hcard a {
@@ -169,7 +166,7 @@
   }
 
   .cody-bg {
-    @apply p-4 bg-surface;
+    @apply bg-surface;
   }
 
   .cody-copy-code {
