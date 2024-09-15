@@ -72,4 +72,17 @@ const project = defineCollection({
 	})
 });
 
-export const collections = { blog, project };
+const viagens = defineCollection({
+	type: "data",
+	schema: ({ image }) =>
+	  z.object({
+		title: z.string(),
+		description: z.string().optional(),
+		cover: image(),
+		flags: z.array(z.string()),
+		year: z.string()
+	  }),
+  });
+
+
+export const collections = { blog, project, viagens };

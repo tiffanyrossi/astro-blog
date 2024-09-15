@@ -1,0 +1,53 @@
+---
+import { Icon } from 'astro-icon/components';
+import Layout from '../layouts/Base.astro';
+
+const changelog: Array<{ date: string; items: string[];}> = [
+	{
+		date: "2024-09-14",
+        items: [`implementada a collection de <a href="/viagens" class="cody-link">/viagens</a>, com galerias de fotos das minhas viagens`, 
+                `adicionada a metatag <code>fediverse:creator</code>, para <a href="https://blog.joinmastodon.org/2024/07/highlighting-journalism-on-mastodon/" target="_blank" class="cody-link" rel="nofollow">atribuir minha autoria</a> aos meus links compartilhados no fediverso `,
+                `criada esta página de /changelog, para compartilhar as mudanças deste blog`],
+    },
+    {
+        date: "2024-09-10",
+        items: [`implementada a sidebar dos posts do blog com meu <a href="https://indieweb.org/h-card" class="cody-link" rel="nofollow" target="_blank">h-card</a>`]
+    },
+    {
+        date: "2024-09-09",
+        items: [`criada página de <a href="/checklist" class="cody-link">/checklist</a>, para listar ideias de mudanças que quero trazer para o blog`],
+    },
+    {
+        date: "2024-09-08",
+        items: [`implementados comentários do mastodon aos posts do blog`]
+    }
+]
+---
+
+<Layout title="changelog">
+    <h2 class="title">changelog</h2>
+    <hr class="my-4"/>
+
+    <div class="mb-4">
+            {
+                changelog.map(({ date, items }) => (
+                    <div class="flex flex-row mb-2">
+                        <div class="flex mr-2 shrink-0">
+                            <p class="pr-2 font-semibold font-mono">{date}</p>
+                        </div>  
+                        <div class="flex mb-2">
+                            <ul>
+                                {items.map((item) => (<li>
+                                    <div class="flex">
+                                        <Icon name="ph:arrow-bend-down-right-fill" class="inline-block w-4 h-4 align-middle" />
+                                        <div class="inline-block ml-1" set:html={item} /></li>
+                                    </div>))}
+                            </ul>
+                        </div>
+                    </div>
+                    )   
+                )
+            }
+    </div>
+                        
+</Layout>

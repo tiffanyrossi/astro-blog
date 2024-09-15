@@ -11,7 +11,7 @@ const allPostsByPinned = sortMDByPinned(allPostsByDate);
 const links: Array<{ title: string; desc: string; href: string }> = [
 	{
 		title: "sobre",
-		desc: "quem sou eu, o que faço, por que faço, como faço.",
+		desc: "quem sou eu e o que é este blog.",
 		href: "/sobre",
 	},
 	{
@@ -35,10 +35,20 @@ const links: Array<{ title: string; desc: string; href: string }> = [
 		href: "/checklist"
 	},
 	{
+		title: "viagens",
+		desc: "galerias de fotos das minhas viagens.",
+		href: "/viagens"
+	},
+	{
 		title: "arquivo",
 		desc: "uma lista de tudo que já escrevi por aqui.",
 		href: "/arquivo",
 	},
+	{
+		title: "changelog",
+		desc: "o que mudou por aqui - e quando mudou.",
+		href: "/changelog"
+	}
 ];
 ---
 
@@ -50,7 +60,7 @@ const links: Array<{ title: string; desc: string; href: string }> = [
 			<ul>
 				{
 					links.map(({ href, title, desc }) => (
-						<li>
+						<li class="mb-2">
 							<a
 								href={href}
 								class="cody-link inline-block before:content-['/']"

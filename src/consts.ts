@@ -83,11 +83,7 @@ export const NAV_LINKS: Array<{ title: string, path: string }> = [
     path: '/blogroll'
   },
   {
-    title: 'checklist',
-    path: '/checklist'
+    title: 'viagens',
+    path: '/viagens'
   },
-  {
-    title: "arquivo",
-    path: '/arquivo'
-  }
 ];

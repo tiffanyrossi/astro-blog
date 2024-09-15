@@ -1,0 +1,61 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/Base";
+import { getViagemImages } from "../../utils/viagens";
+import { Image } from "astro:assets";
+import BackToTopBtn from "@/components/BackToTopBtn";
+import { Icon } from "astro-icon/components";
+
+export async function getStaticPaths() {
+  const viagens = await getCollection("viagens");
+
+  const paths = Object.values(viagens).map((viagem) => {
+    return {
+      params: {
+        id: viagem.id,
+       },
+      props: {
+        viagem,
+      },
+    };
+  });
+
+  return paths;
+}
+
+const { viagem } = Astro.props;
+const images = await getViagemImages(viagem.id);
+
+---
+<BaseLayout title={"viagens"}>
+			<header>
+        <h1 class="title"><a href="/viagens" class="cody-link">viagens</a> / 
+          {viagem.data.flags.map((flag) => (<Icon name={flag} class="w-6 h-6 inline-block mx-0.5" />))} {viagem.data.title} - {viagem.data.year}
+        </h1>
+        <span class="font-thin text-sm text-textColor">
+          {viagem.data.description}
+        </span>
+      </header>
+      <hr class="my-4"/>
+      <BackToTopBtn/>
+
+      <main class="space-y-4">  
+        <div
+        class="mx-auto container my-8 sm:columns-2 md:columns-3   "
+      >
+        {
+          images.map((image) => (
+            <Image
+              src={image}
+              alt={`Image from ${viagem.data.title} album`}
+              format="avif"
+              quality={50}
+              class="rounded mb-4 border border-transparent hover:border-gray-300 transition-all duration-300 ease-in-out hover:shadow-lg"
+              loading="lazy"
+            />
+          ))
+        }
+        </div>
+      </main>
+  </BaseLayout>
+  
