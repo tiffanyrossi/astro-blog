@@ -38,6 +38,9 @@ importers:
       mdast-util-to-string:
         specifier: ^4.0.0
         version: 4.0.0
+      photoswipe:
+        specifier: ^5.4.4
+        version: 5.4.4
       reading-time:
         specifier: ^1.5.0
         version: 1.5.0
@@ -48,6 +51,9 @@ importers:
         specifier: ^5.3.3
         version: 5.5.4
     devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.0
+        version: 1.2.0
       '@iconify-json/fa6-brands':
         specifier: ^1.2.0
         version: 1.2.0
@@ -403,6 +409,9 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@iconify-json/circle-flags@1.2.0':
+    resolution: {integrity: sha512-IiHBArcOAePzikToo52mUmVHh5ysekcuK5xOzZkFk9mokIp+rwYlSP0qgfB0POmD9Y22bCVNHYukyg5a5qDCNw==}
 
   '@iconify-json/fa6-brands@1.2.0':
     resolution: {integrity: sha512-2f5AeUbufKeU/JY+cbX6dOsPaQO1WwfShfoxwRd5VRF3Lr1jGM8CfXLFhb8bonAqbue1oBPwmjHUfaCafAfo2A==}
@@ -1989,6 +1998,10 @@ packages:
   periscopic@3.1.0:
     resolution: {integrity: sha512-vKiQ8RRtkl9P+r/+oefh25C3fhybptkHKCZSPlcXiJux2tJF55GnEj3BVn4A5gKfq9NWWXXrxkHBwVPUfH0opw==}
 
+  photoswipe@5.4.4:
+    resolution: {integrity: sha512-WNFHoKrkZNnvFFhbHL93WDkW3ifwVOXSW3w1UuZZelSmgXpIGiZSNlZJq37rR8YejqME2rHs9EhH9ZvlvFH2NA==}
+    engines: {node: '>= 0.12.0'}
+
   picocolors@1.1.0:
     resolution: {integrity: sha512-TQ92mBOW0l3LeMeyLV6mzy/kWr8lkd/hp3mTg7wYK7zJhuBStmGMBG0BdeDZS/dZx1IukaX6Bk11zcln25o1Aw==}
 
@@ -3125,6 +3138,10 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
+
+  '@iconify-json/circle-flags@1.2.0':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify-json/fa6-brands@1.2.0':
     dependencies:
@@ -5193,6 +5210,8 @@ snapshots:
       '@types/estree': 1.0.5
       estree-walker: 3.0.3
       is-reference: 3.0.2
+
+  photoswipe@5.4.4: {}
 
   picocolors@1.1.0: {}
 
