@@ -1,12 +1,12 @@
 ---
 title: 'compartilhando minhas viagens e outras novidades'
-description: ''
+description: 'viajar sempre foi o grande sonho da minha vida. trabalhei com turismo por muitos anos: eu planejava e organizava viagens de clientes, fechava hospedagens de luxo, solicitava transfers, indicava restaurantes, buscava por itens raros, montava agendas c'
 pubDate: 'Sep 14 2024'
 tags: ["viagens", "novidades"]
 comments:
   host: 'ursal.zone'
   username: 'tiffs'
-  id: ''
+  id: '113142257436279219'
 ---
 viajar sempre foi o grande sonho da minha vida. trabalhei com turismo por muitos anos: eu planejava e organizava viagens de clientes, fechava hospedagens de luxo, solicitava transfers, indicava restaurantes, buscava por itens raros, montava agendas culturais, arranjava roteiros, comemorações de aniversário e pedidos de casamento, em qualquer lugar do mundo.
 
