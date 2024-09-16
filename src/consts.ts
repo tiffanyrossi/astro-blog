@@ -18,7 +18,7 @@ type SocialLink = {
 }
 
 export const siteConfig: Config = {
-  title: "☠️ blog.tiffs.dev",
+  title: "☠️ tiffs.dev",
   description: "meu cantinho pessoal na indieweb",
   lang: "pt-BR",
   profile: {
