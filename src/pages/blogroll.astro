@@ -4,12 +4,14 @@ import Layout from '../layouts/Base.astro';
 
 /* ícones:
 • podcast -> ph:microphone-bold
-• newsletter -> simple-line-icons:envelope-letter
 • blog -> ph:chat-text-bold
-• canal -> simple-line-icons:social-youtube
+• site -> ph:globe-bold
+• newsletter -> ph:mailbox-bold
 
-https://icones.js.org/collection/simple-line-icons
+https://icones.js.org/collection/ph
+
 */
+
 const links: Array<{ title: string; desc: string; href: string, icon: string }> = [
 	{
 		title: "olá, gabs",
@@ -26,7 +28,7 @@ const links: Array<{ title: string; desc: string; href: string, icon: string }> 
     {
 		title: "trilux",
 		desc: "um blog pessoal, a esta altura do campeonato!",
-		href: "ph:microphone-bold",
+		href: "https://trilux.org/",
 		icon: "ph:chat-text-bold",
 	},
     {
@@ -40,6 +42,18 @@ const links: Array<{ title: string; desc: string; href: string, icon: string }> 
         desc: "um sistema para organizar sua vida.",
         href: "https://johnnydecimal.com/",
         icon: "ph:globe-bold"
+    },
+    {
+        title: "tudo, menos coerência",
+        desc: "da penha de frança pra paris - frança",
+        href: "https://substack.com/@tudomenoscoerencia",
+        icon: "ph:mailbox-bold",
+    },
+    {
+        title: "fediversando",
+        desc: "um manual colaborativo do fediverso em constante construção",
+        href: "https://bolha.blog/fediversando/",
+        icon: "ph:chat-text-bold"
     }
 ];
 
