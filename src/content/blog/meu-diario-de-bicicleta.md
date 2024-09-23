@@ -6,7 +6,7 @@ tags: ["bicicleta"]
 comments:
   host: 'ursal.zone'
   username: 'tiffs'
-  id: ''
+  id: '113184903151684685'
 ---
 eu fui criada com *bastante cuidado*, bem princesinha. não podia participar de brincadeiras perigosas nem ir no trepa-trepa, e só podia brincar dentro de casa. lembro que, quando ainda tinha um dígito de idade, comprei um pião escondida de um menino da escola - não podia ter algo tão *perigoso* quando um brinquedo com um prego.
 
