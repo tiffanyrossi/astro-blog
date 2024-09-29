@@ -6,13 +6,18 @@ import Layout from '../layouts/Base.astro';
 
 <Layout title="agora">
         <h2 class="title">now</h2>
-        <p class="text-sm italic">uma página que lista o que tenho feito nos últimos tempos :) — 
-                <small><a href="https://nownownow.com/about" target="_blank" rel="noopener noreferrer" class="cody-link">por que criar uma "now page"?</a></small></p>
-        <hr class="my-4"/>
-
-        <div class="mb-4">
-                <small>última atualização: 24 de agosto de 2024</small>
-        </div>
+                <ul class="gap-2 sm:gap-4 list-disc list-inside">
+                        <li>
+                                <a href="https://nownownow.com/about" target="_blank" rel="noopener noreferrer" class="cody-link">por que criar uma "now page"?</a>
+                        </li>
+                        <li>
+                                <a href="https://github.com/tiffanyrossi/astro-blog/commits/main/src/pages/now.astro" target="_blank" rel="noopener noreferrer" class="cody-link">histórico de commits dessa página</a>
+                        </li>
+                        <li>
+                                última atualização: <i>24 de agosto de 2024.</i>  
+                        </li>
+                </ul>
+                       <hr class="my-4"/>
 
         <div class="mb-4 text-justify break-words">
                 <ul>
