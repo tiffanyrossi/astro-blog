@@ -15,7 +15,7 @@ const blog = defineCollection({
 		title: z.string().max(150),
 		description: z.string().max(250),
 		comments: z.object({
-			host: z.string().optional().default('ursal.zone'),
+			host: z.string().optional().default('brejo.us'),
 			username: z.string().optional().default('tiffs'),
 			id: z.string().optional()
 		}).optional().default({}),

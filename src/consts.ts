@@ -45,9 +45,9 @@ export const socialLinks: Array<SocialLink> = [
     link: "https://github.com/tiffanyrossi",
   },
   {
-    icon: "ph:mastodon-logo",
-    friendlyName: "mastodon",
-    link: "https://ursal.zone/@tiffs",
+    icon: "ph:fediverse-logo",
+    friendlyName: "fediverso",
+    link: "https://brejo.us/@tiffs",
   },
   {
     icon: "ph:envelope-simple",
