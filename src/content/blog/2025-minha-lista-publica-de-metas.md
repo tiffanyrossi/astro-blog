@@ -1,0 +1,30 @@
+---
+title: '2025: minha lista pública de metas'
+description: ''
+pubDate: 'Jan 01 2025'
+tags: ["disciplina", "metas"]
+comments:
+  host: 'brejo.us'
+  username: 'tiffs'
+  id: ''
+---
+na virada de 2020 para 2021, cansada de queimar dinheiro em quarenta e cinco maços de marlboro vermelho por mês (e, também, cansada dos gritos de um vizinho insuportável que reclamava de tudo - assunto para outro post), decidi parar de fumar, hábito que mantive por quase doze anos. uma conquista tão difícil quanto essa - eu genuinamente amava fumar - desencadeou uma série de outras mudanças, que culminaram na pessoa que sou hoje.
+
+fui de sedentária incorrigível a corredora, crossfiteira, rata de academia, yogini. troquei uma alimentação totalmente insalubre (por muitas vezes almocei um pacote de bolachas) por super saladas, marmitas, frutas, 3 litros de água por dia. parei quase que totalmente de consumir álcool. emagreci mais de 30 quilos, construí alguns músculos. consegui controlar a fibromialgia sem nenhuma medicação. comecei a estudar programação e cursar faculdade, me tornei desenvolvedora de software, CLT feliz com VR e convênio médico, e pude largar o trabalho freelancer de edição de vídeos, que me sugava muito e remunerava pouco.
+
+o que me permitiu remodelar toda a minha vida foi a construção de **disciplina**. perceber que eu era capaz de falar não para o cigarro me habilitou a começar a dizer não para um monte de outras coisas. até então, eu acreditava que ter uma certa rigidez nos hábitos era uma característica negativa, de pessoas infelizes, que não eram livres. e aí eu percebi que **é libertador ter o controle das minhas escolhas**.
+
+no último ano, uma série de acontecimentos, pequenos e maiores, me colocaram em situações em que tive que sair dessa rotina que construí para mim, a princípio momentaneamente. porém, uma coisa nova sobre disciplina que aprendi em 2024 é que ela precisa não apenas ser desenvolvida, mas também **mantida**.
+
+como uma bola de neve, uma coisa foi levando à outra, e de repente as crises de fibromialgia voltaram, e passei a não conseguir me exercitar. meu sono não me descansava, e passei a ter dificuldades em acordar cedo, o que me fez passar a dormir mais tarde. acabei consumindo mais álcool do que gostaria - ainda bem pouco, mas mais do que gostaria. tive novos episódios de compulsão alimentar. num geral continuei me alimentando bem nas refeições principais, mas aumentei meu consumo de ultra processados. quase não estudei, não li nenhum livro até o fim, não aprendi muita coisa nova, e gastei tempo demais rolando feeds.
+
+pouco a pouco, fui negociando comigo mesma a não fazer aquilo que sabia que devia fazer - amanhã eu faço, depois eu compenso, é só por hoje. um dia virou uma semana. um pouquinho virou muito. e assim vivi um ano em que tentava recomeçar o tempo todo. todo mês eu voltava para a academia, mas não conseguia completar uma semana, e me frustrava. em vez de desenvolver mais disciplina, desgastei aquela que já tinha construído. é claro que minha vida continua sob controle, mas conhecendo de onde eu vim, eu sei que daqui tenho apenas dois caminhos: piorar ou melhorar. para 2025, faço aqui minha lista pública de metas. ela é simples, só tem coisas que sei que consigo fazer, porque já fiz tudo isso antes.
+
+1. **praticar atividade física no mínimo 5x por semana** tudo começa aqui: sem exercício eu não tenho força, as crises de dor voltam e não consigo ser funcional. preciso deixar tudo pronto à noite, para não ter tempo de tentar negociar comigo mesma para não ir.
+2. **acordar às 5h da manhã - e levantar da cama** para fazer tudo que preciso fazer e ter disposição para o dia, preciso acordar cedo. para acordar cedo, preciso dormir cedo. 22h é meu horário de ir para a cama, não importa quão envolvida eu esteja com a série que estou assistindo.
+3. **não beber fora de casa, ainda que esteja socializando** como extrovertida, tenho extrema dificuldade em me integrar em ambientes de socialização, e um pouco de álcool atua como facilitador de interações, então falar não para um drink num happy hour do trabalho é difícil. mas eu quero continuar sendo uma pessoa que só aprecia um bom vinho em casa, e nada mais. para reforçar isso, irei passar janeiro completamente sóbria.
+4. **reduzir o consumo** pensar quantas vezes forem necessárias antes de fazer uma compra. preciso mesmo? quero mesmo? vou usar ou vai ficar encostado? separei uma área do meu planner para mapear as coisas que quero comprar, junto aos seus valores, para entender minhas prioridades e tomar melhores decisões. usar mais as coisas que já tenho, organizar melhor os ambientes para ter visibilidade de tudo que tenho. preferir comprar itens de mais qualidade, mais duráveis. 
+5. **me alimentar melhor** eu me mudei para um bairro incrível, que tem hortifruti, feira e mercado municipal por perto, a preços bons. eu só preciso me planejar - comprar e higienizar frutas e legumes, simplificar os preparos e ter sempre opções práticas e variadas para quando tiver fome no meio da tarde.
+6. **ler mais** agora que vou trabalhar de metrô, tenho mais tempo para ler no caminho. também vou usar o momento de antes de dormir para ler um pouquinho, em vez de ficar no celular. [criei uma conta no bookwyrm](https://bookwyrm.social/user/tiffs) para compartilhar as minhas leituras.
+7. **estudar muito** tenho dois objetivos com os estudos para esse ano: melhorar meu espanhol e evoluir tecnicamente como desenvolvedora. para o espanhol, tenho ouvido podcasts, mas preciso pensar em mais estratégias. em relação aos estudos técnicos, vou fazer a [formação em microsserviços da algaworks](https://lp.algaworks.com/microsservicos-conteudo/), que tem um conteúdo bem puxado. meu maior desafio vai ser pensar em uma rotina de estudos que funcione.
+8. **bônus: pedalar** essa aqui preciso criar vergonha na cara, arrumar um lugar para praticar, pegar a bike e sair de casa. não tem segredo :)
