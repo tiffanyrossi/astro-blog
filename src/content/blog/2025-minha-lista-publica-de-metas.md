@@ -1,12 +1,12 @@
 ---
 title: '2025: minha lista pública de metas'
-description: ''
+description: 'na virada de 2020 para 2021, cansada de queimar dinheiro em quarenta e cinco maços de marlboro vermelho por mês (e, também, cansada dos gritos de um vizinho insuportável que reclamava de tudo - assunto para outro post), decidi parar de fumar, hábito'
 pubDate: 'Jan 01 2025'
 tags: ["disciplina", "metas"]
 comments:
   host: 'brejo.us'
   username: 'tiffs'
-  id: ''
+  id: '113755846659309409'
 ---
 na virada de 2020 para 2021, cansada de queimar dinheiro em quarenta e cinco maços de marlboro vermelho por mês (e, também, cansada dos gritos de um vizinho insuportável que reclamava de tudo - assunto para outro post), decidi parar de fumar, hábito que mantive por quase doze anos. uma conquista tão difícil quanto essa - eu genuinamente amava fumar - desencadeou uma série de outras mudanças, que culminaram na pessoa que sou hoje.
 
